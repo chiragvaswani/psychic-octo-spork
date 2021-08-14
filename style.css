@@ -22,7 +22,10 @@ h1 {
 }
 
 header {
-  background: #3f51b5;
+  /* background: #3f51b5; */
+  background-image: url(./pexels-killian-eon-2635595.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   color: #ffffff;
   padding: 150px 0;
 }
@@ -36,10 +39,12 @@ header p {
 
 .timeline {
   position: relative;
+  background-image: url(./background.png);
+  background-size: cover;
 }
 .timeline::before {
   content: "";
-  background: #c5cae9;
+  background: gainsboro;
   width: 5px;
   height: 95%;
   position: absolute;
@@ -82,8 +87,11 @@ header p {
   width: 45%;
   padding: 10px 30px;
   border-radius: 15px;
-  background: #f5f5f5;
-  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+  /* background: #f5f5f5; */
+  background-color: rgba(255, 255, 255, 0.6);
+  /* box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2); /*0px 22px 20px -10px rgba(0, 0, 0,0.2)*/
+  transition: all 0.4s;
 }
 .timeline-content::after {
   content: "";
@@ -100,7 +108,7 @@ header p {
 .timeline-img {
   width: 30px;
   height: 30px;
-  background: #3f51b5;
+  background: #68e299;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -129,7 +137,8 @@ a:focus {
 }
 
 .timeline-card {
-  padding: 0 !important;
+  padding: 0px 0px !important;
+  padding-bottom: 10px !important;
 }
 .timeline-card p {
   padding: 0 20px;
@@ -148,8 +157,8 @@ a:focus {
   height: 200px;
   position: relative;
   margin-bottom: 20px;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .timeline-img-header h2 {
   color: #ffffff;
@@ -161,12 +170,12 @@ a:focus {
 blockquote {
   margin-top: 30px;
   color: #757575;
-  border-left-color: #3f51b5;
+  border-left-color: #3fc374;
   padding: 0 20px;
 }
 
 .date {
-  background: #ff4081;
+  background: #0000009c;
   display: inline-block;
   color: #ffffff;
   padding: 10px;
@@ -174,6 +183,17 @@ blockquote {
   top: 0;
   right: 0;
   border-radius: 15px;
+}
+
+.timeline-content:hover {
+  backface-visibility: hidden;
+  transform: scale(1.01, 1.01);
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
 
 @media screen and (max-width: 768px) {
