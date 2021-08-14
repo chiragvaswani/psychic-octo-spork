@@ -16,7 +16,7 @@ $(function () {
       duration: 800,
     });
   } else {
-    console.log($(body).width());
+    console.log($("body").width());
     sr.reveal(".js--fadeInLeft", {
       origin: "left",
       distance: "300px",
