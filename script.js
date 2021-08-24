@@ -1,8 +1,6 @@
 $(function () {
   window.sr = ScrollReveal();
-  console.log("Was here");
   if ($(window).width() < 768) {
-    console.log("HEllo");
     if ($(".timeline-content").hasClass("js--fadeInLeft")) {
       $(".timeline-content")
         .removeClass("js--fadeInLeft")
